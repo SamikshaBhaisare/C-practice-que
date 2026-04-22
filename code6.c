@@ -6,12 +6,24 @@ struct student{
     float marks;
 };
 int main(){
-    struct student s1;
-    strcpy(s1.name,"Akanksha");
-    s1.age=22;
-    s1.marks=85.5;
-    printf("Name is:%s\n",s1.name);
-    printf("Age is:%d\n",s1.age);
-    printf("Marks is:%f\n",s1.marks);
+   struct student s[3];
+   for(int i=0;i<3;i++){
+    printf("enter student detail:%d\n",i+1);
+    printf("name:");
+    scanf("%s",s[i].name);
+     printf("age:");
+    scanf("%d",&s[i].age);
+     printf("marks:");
+    scanf("%f",&s[i].marks);
+
+
+
+   }
+    for(int i = 0; i < 3; i++) {
+        printf("Student %d:\n", i + 1);
+        printf("name: %d\n", s[i].name);
+        printf("age: %s\n", s[i].age);
+        printf("Marks: %f\n", s[i].marks);
+    }
     return 0;
 }
