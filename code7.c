@@ -12,7 +12,12 @@ void printstudent(struct student s){
 }
 int main(){
     struct student s1;
-    
+    printf("enter name:");
+    scanf("%s",s1.name);
+     printf("enter age:");
+    scanf("%d",&s1.age);
+     printf("enter marks:");
+    scanf("%f",&s1.marks);
  printstudent(s1);
 
     return 0;
