@@ -1,8 +1,14 @@
 #include<stdio.h>
+void swap(int a,int b);
 int main(){
-    int i=8;
-    int *ptr=&i;
-    int **pptr=&ptr;
-    printf("%d",(**pptr));
+    int a=2,b=4;
+    swap(a,b);
+     printf("a=%d & b=%d\n",a,b);
     return 0;
+}
+void swap(int a,int b){
+    int t=a;
+    a=b;
+    b=t;
+    printf("a=%d & b=%d\n",a,b);
 }
